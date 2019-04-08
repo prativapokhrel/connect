@@ -1,4 +1,4 @@
-class Api::V1::CompaniesController < BaseController 
+class Api::V1::CompaniesController < Api::V1::BaseController 
   def index 
     render json: Company.all
   end 
