@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  database: connect_development
+  encoding: unicode
+  username: devuser
+  password: devuser
+  host: localhost
+
+test:
+  adapter: postgresql
+  database: connect_test
+  encoding: unicode
+  username: devuser
+  password: devuser
+  host: localhost
