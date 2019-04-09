@@ -1,8 +1,9 @@
-class Api::V1::EmployeesController < Api::V1::BaseController 
+class EmployeesController < ApplicationController
 
   def index 
-    render json: { employees: Employee.all, managers: Employee.where(role: "Manager")}
-
+    @employees = Employee.all 
+    @managers = Employee.where(role: "Manager")
+    @addresses = Address.all 
   end 
 
   def show 

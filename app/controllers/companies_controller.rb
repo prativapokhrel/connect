@@ -1,6 +1,6 @@
-class Api::V1::CompaniesController < Api::V1::BaseController 
+class CompaniesController < ApplicationController
   def index 
-    render json: Company.all
+    Company.all
   end 
 
   def show 
